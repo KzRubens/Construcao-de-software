@@ -1,6 +1,6 @@
 🚀 Simulação de Desenvolvimento Ágil: Gerenciador de Tarefas em Console
 
-Este projeto consiste em uma atividade prática de simulação ágil inspirada no Scrum Framework, onde a equipe atua como um time completo de desenvolvimento de software para construir um Gerenciador de Tarefas via Console.
+Este projeto consiste em uma atividade prática de simulação ágil inspirada no Scrum Framework, onde a equipe atuou como um time completo de desenvolvimento de software para construir um Gerenciador de Tarefas via Console.
 
 A dinâmica e a fundamentação teórica deste projeto baseiam-se nas diretrizes dos documentos e materiais de apoio de nossa metodologia:
 
@@ -36,96 +36,45 @@ Responsabilidades Práticas
 
 Product Owner (PO)
 
-• Representa a voz do cliente e define as metas do produto.
+Define os requisitos detalhados do gerenciador, prioriza o Product Backlog e introduz alterações/novos requisitos após as reuniões diárias.
+
+Scrum Master
+
+Organiza as reuniões rápidas (Daily Standups), remove impedimentos técnicos e de comunicação, e assegura a aplicação do framework ágil.
+
+Developers (Desenvolvedores)
+
+Implementam a lógica do gerenciador de tarefas no console e decompõem as metas da sprint em tarefas acionáveis.
+
+Tester / QA (Garantia de Qualidade)
+
+Cria planos de teste, roda os cenários no console e valida se os critérios de aceitação foram estritamente cumpridos.
+
+🧪 Dinâmica de Implementação e Seleção de Código
+
+Visando garantir a qualidade de software, a redundância de soluções e o debate de melhores práticas de engenharia de software no time, adotamos uma estratégia competitiva e colaborativa de desenvolvimento:
+
+Implementação Paralela (Multi-Engine): Foram criados 4 códigos distintos e independentes, onde cada desenvolvedor (Dev) desenvolveu sua própria proposta de arquitetura para o gerenciador de tarefas em console.
+
+Ciclo de Testes Estritos: Todos os 4 códigos passaram por uma rodada intensiva de testes funcionais realizados pela equipe de QA (Tester). Foram avaliados quesitos como resiliência a inputs inválidos, performance, limpeza do console e legibilidade do código.
+
+Decisão e Escolha do Código Final: Após as validações, a equipe se reuniu para analisar os resultados. Apenas uma das quatro implementações foi selecionada como a versão oficial definitiva para integrar o repositório principal, unindo os melhores pontos das abordagens individuais observadas no processo.
+
+📈 Metodologia Visual (Quadro Kanban)
+
+O fluxo de trabalho foi gerenciado utilizando um quadro Kanban para monitoramento contínuo do progresso físico dos cartões de tarefas:
+
+[Backlog] ➔ [To Do] ➔ [In Progress] ➔ [Review] ➔ [Testing] ➔ [Done]
 
 
+Backlog: Itens e melhorias levantadas pelo PO.
 
-• Cria, gerencia e prioriza o Product Backlog.
+To Do: O que foi selecionado para a Sprint atual.
 
+In Progress: O desenvolvedor está escrevendo o código.
 
+Review: Revisão por pares (Peer Review) para garantir padrões de codificação.
 
-• Altera requisitos dinamicamente após as dailies para simular cenários reais.
+Testing: Código sob validação ativa do Tester/QA.
 
-
-
-• Não interfere em decisões técnicas ou de implementação.
-
-Scrum Master (SM)
-
-• Garante a correta execução dos ritos do Scrum.
-
-
-
-• Facilita reuniões (Sprint Planning, Daily, Review e Retrospective).
-
-
-
-• Remove impedimentos e bloqueios da equipe técnica.
-
-Developers
-
-• Planejam o escopo técnico (Sprint Backlog).
-
-
-
-• Implementam o código-fonte do gerenciador no console.
-
-
-
-• Decidem a arquitetura técnica, divisão interna de tarefas e design do sistema.
-
-Tester / QA
-
-• Garante a estabilidade e qualidade técnica da entrega.
-
-
-
-• Planeja casos de teste baseado nas regras do PO.
-
-
-
-• Valida e reporta bugs ou inconformidades no console.
-
-🔄 Dinâmica das Sprints e Ritos Ágeis
-
-O projeto foi dividido em ciclos incrementais chamados Sprints, respeitando os ritos tradicionais de desenvolvimento de software:
-
-graph TD
-    A[Product Backlog] --> B(Sprint Planning)
-    B --> C{Sprint Cycle}
-    C -->|Reunião Diária - 15min| D(Daily Standup)
-    D -->|Novos Requisitos do PO| A
-    C --> E(Sprint Review)
-    E --> F(Sprint Retrospective)
-    F --> G[Incremento Funcional do Console]
-
-
-Sprint Planning: Reunião onde o PO apresenta os itens prioritários, a equipe define a Meta da Sprint e os Desenvolvedores criam o Sprint Backlog.
-
-Daily Standup: Reuniões rápidas diárias de até 15 minutos para sincronizar o progresso e expor bloqueios.
-
-Mudanças Dinâmicas: Após cada daily, o PO pode inserir "mudanças de mercado" que forçam o time a adaptar-se rapidamente a novos requisitos.
-
-Sprint Review & Retrospective: Apresentação da ferramenta final ao PO e discussão sobre melhorias no processo de trabalho do time.
-
-📋 Quadro de Fluxo de Trabalho (Kanban)
-
-Utilizamos um quadro visual baseado no Kanban de engenharia de software para rastrear o status de cada funcionalidade:
-
-Backlog: Ideias e novos requisitos sugeridos pelo PO.
-
-To Do (A Fazer): Itens selecionados e planejados para a Sprint vigente.
-
-In Progress (Em Desenvolvimento): Funcionalidades ativamente sendo programadas no console.
-
-Review (Revisão): Código concluído aguardando aprovação de outro desenvolvedor (Pull Request).
-
-Testing (Testes): Aplicação entregue para a fase de testes manuais e de estresse pelo QA.
-
-Done (Concluído): Funcionalidade integrada com sucesso e 100% testada.
-
-🛠️ Tecnologias e Execução
-
-Linguagem Utilizada: [Python]
-
-Interface: Interface de linha de comando (Console/Terminal).
+Done: Requisito totalmente funcional e pronto para ser incrementado no sistema principal.
